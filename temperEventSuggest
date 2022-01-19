@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Hava sıcaklığı giriniz: ");
+        int temper = inp.nextInt();
+        int t = 0;
+
+        if (temper < 5) {
+            t = 0;
+        }
+
+        if (temper >= 5 && temper < 15) {
+            t = 1;
+        }
+
+        if (temper >= 15 && temper < 25) {
+            t = 2;
+        }
+        if (temper>=25){
+            t = 3;
+        }
+
+        switch (t){
+            case 0:
+                System.out.println("kayak yapmaya ne dersin");
+                break;
+            case 1:
+                System.out.println("harika bir film var , görmek ister misin");
+                break;
+            case 2:
+                System.out.println("etleri almayı unutma , pikniğe gidiyoruz");
+                break;
+            case 3:
+                System.out.println("bunaltıcı sıcaklarda en iyi şey yüzme");
+                break;
+          }
+       }
+     }
